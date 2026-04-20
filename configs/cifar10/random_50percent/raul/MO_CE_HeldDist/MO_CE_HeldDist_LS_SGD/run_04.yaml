@@ -1,0 +1,21 @@
+script: main_forget
+dataset: cifar10
+
+model_path: ./checkpoints/cifar10/resnet18/2/0model_SA_best.pth.tar
+retrain_path: ./logs/cifar10/random_50percent/baselines/Retrain/run_01/retraincheckpoint.pth.tar
+
+num_indexes_to_replace: 22500
+
+save_dir: ./logs/cifar10/random_50percent/mojd/MO-CE+HeldDist-LS-SGD-lr_1e-2/run_04
+
+unlearn: MO_JD_CE_KL
+mo_aggregator: mean
+unlearn_epochs: 5
+unlearn_lr: 1e-2
+optimizer: sgd
+scheduler: none
+
+wandb_entity: rasa_research
+wandb_project: mu-classification
+wandb_group: MO-CE+HeldDist-LS-SGD
+wandb_name: MO-CE+HeldDist-LS-SGD-lr_1e-2

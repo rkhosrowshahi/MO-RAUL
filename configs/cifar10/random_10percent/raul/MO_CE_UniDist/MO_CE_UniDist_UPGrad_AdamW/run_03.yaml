@@ -1,0 +1,21 @@
+script: main_forget
+dataset: cifar10
+
+model_path: ./checkpoints/cifar10/resnet18/2/0model_SA_best.pth.tar
+retrain_path: ./logs/cifar10/random_10percent/baselines/Retrain/run_01/retraincheckpoint.pth.tar
+
+num_indexes_to_replace: 4500
+
+save_dir: ./logs/cifar10/random_10percent/mojd/MO-CE+UniDist-UPGrad-AdamW-lr_1e-5/run_03
+
+unlearn: MO_JD_CE_UniDist
+mo_aggregator: upgrad
+unlearn_epochs: 5
+unlearn_lr: 1e-5
+optimizer: adamw
+scheduler: none
+
+wandb_entity: rasa_research
+wandb_project: mu-classification
+wandb_group: MO-CE+UniDist-UPGrad-AdamW
+wandb_name: MO-CE+UniDist-UPGrad-AdamW-lr_1e-5

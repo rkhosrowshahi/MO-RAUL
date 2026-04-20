@@ -1,0 +1,18 @@
+script: main_random
+dataset: cifar10
+
+model_path: ./checkpoints/cifar10/resnet18/2/0model_SA_best.pth.tar
+retrain_path: ./logs/cifar10/random_50percent/baselines/Retrain/run_01/retraincheckpoint.pth.tar
+
+num_indexes_to_replace: 22500
+mask_path: ./masks/cifar10/resnet18/random_50percent/23/with_0.5.pt
+
+save_dir: ./logs/cifar10/random_50percent/baselines/SalUn/run_02
+
+unlearn: RL
+unlearn_epochs: 10
+unlearn_lr: 1e-2
+
+wandb_entity: rasa_research
+wandb_group: SalUn
+wandb_name: SalUn-mask_0.5-lr_1e-2-run_02

@@ -1,0 +1,8 @@
+script: generate_mask
+dataset: cifar10
+
+model_path: ./checkpoints/cifar10/resnet18/2/0model_SA_best.pth.tar
+
+num_indexes_to_replace: 22500
+
+save_dir: ./masks/cifar10/resnet18/random_50percent/23

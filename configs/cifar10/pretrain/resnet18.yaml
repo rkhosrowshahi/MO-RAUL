@@ -1,0 +1,8 @@
+script: main_train
+dataset: cifar10
+arch: resnet18
+
+save_dir: ./checkpoints/cifar10/resnet18/2
+
+epochs: 182
+lr: 0.1

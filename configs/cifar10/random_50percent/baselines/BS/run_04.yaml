@@ -1,0 +1,18 @@
+script: main_forget
+dataset: cifar10
+
+model_path: ./checkpoints/cifar10/resnet18/2/0model_SA_best.pth.tar
+retrain_path: ./logs/cifar10/random_50percent/baselines/Retrain/run_01/retraincheckpoint.pth.tar
+
+num_indexes_to_replace: 22500
+
+save_dir: ./logs/cifar10/random_50percent/baselines/BoundaryShrink/run_04
+
+unlearn: boundary_shrink
+unlearn_epochs: 10
+unlearn_lr: 5e-4
+warmup: 1
+
+wandb_entity: rasa_research
+wandb_group: BS
+wandb_name: BS-lr_5e-4-run_04

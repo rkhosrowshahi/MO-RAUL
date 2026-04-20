@@ -1,0 +1,7 @@
+[project]
+name = "momu"
+version = "0.1.0"
+description = "Machine Unlearning / Saliency Unlearning for Classification"
+readme = "README.md"
+license = {text = "See LICENSE"}
+requires-python = ">=3.8"

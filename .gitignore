@@ -1,0 +1,56 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+
+# Build & distribution
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+notebooks/
+
+# Machine Learning
+checkpoints/
+logs/
+wandb/
+masks/
+
+# Datasets
+data/
+datasets/
+tiny-imagenet-200/
+*.tar
+*.zip
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project output
+archive/
+docs/
+figures/
+tables/
+papers/
+
+outsofomore/
